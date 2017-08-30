@@ -5,7 +5,7 @@ Trabalho desenvolvido durante a disciplina de BD1
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
+Renato da Silva Bellumat:renato.bellumat@hotmail.com<br>
 Luciano Ananias Barboza Junior:luciano.ananias.40@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
@@ -14,7 +14,7 @@ Este documento contém a especificação do projeto do banco de dados <nome do p
 
 ### 3.MINI-MUNDO<br>
 
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas) <br>
+O App se basearia em pessoas que tenha uma determinada quantia de dinheiro e esteja disposta à fazer uma viagem ou conhecer locais Capixabas com essa quantia. No sistema a pessoa indica uma certa quantia que deseja gastar e o aplicativo provém destinos em terras Capixabas que o mesmo pode chegar usando essa quantia determinada. A reserva da Pousada e afins não são disponibilizadas pelo aplicativo, o objetivo principal é apenas mostrar as opções de destinos dentro do orçamento. O sistema também calculará o valor do deslocamento por carro e por ônibus(caso o destino possua uma distância maior).<br>
 Entrevista com o usuário e identificação dos requisitos.<br>
 Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
 cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
