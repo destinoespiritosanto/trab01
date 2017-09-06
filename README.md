@@ -7,6 +7,7 @@ Trabalho desenvolvido durante a disciplina de BD1
 Integrantes do grupo<br>
 Renato da Silva Bellumat:renato.bellumat@hotmail.com<br>
 Luciano Ananias Barboza Junior:luciano.ananias.40@gmail.com<br>
+Leonardo Kenji Murakami:leonardokenji_93@hotmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
