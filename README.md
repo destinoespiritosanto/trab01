@@ -25,10 +25,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 [Mockup](https://github.com/destinoespiritosanto/trab01/blob/master/Destinos%20ES.pdf "mockup")
 
 #### 4.1 TABELA DE DADOS DO SISTEMA:
-    a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas.
-    b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
-    e deve ser criada antes do modelo conceitual
-    c) Após criada esta tabela não deve ser modificada, pois será comparada com a tabela final na conclusão do trabalho
+   [Tabela](https://github.com/destinoespiritosanto/trab01/blob/master/Tabela%20de%20dados.ods)
     
     
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
