@@ -10,8 +10,7 @@ Luciano Ananias Barboza Junior:luciano.ananias.40@gmail.com<br>
 Leonardo Kenji Murakami:leonardokenji_93@hotmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
-<br>e motivação da escolha realizada. <br>
+O projeto DestinoES basea-se em um aplicativo de busca de pontos turísticos e hotéis de locais do estado do Espírito Santo. Decidimos desenvolver este trabalho, pois se encaixa muito bem na disciplina de banco de dados tendo em vista que temos que cadastrar vários usuários, pontos turísticos e hotéis disponíveis, além de podermos incentivar o turismo capixaba, mostrando lugares incríveis  que nem todo mundo tem conhecimento e que caiba no orçamento.
 
 ### 3.MINI-MUNDO<br>
 
