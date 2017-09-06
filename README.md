@@ -29,8 +29,15 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
     
     
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 10 principais relatórios que podero ser obtidos por meio do sistema proposto!
+   Poderá fornecer informações sobre a pousada e o local onde o usuário deseja visitar e relatórios de dados como mais pesquisados e        mais bem avaliados.
+   Lista dos relatórios:
+   -Novos usuários
+   -Mais pesquisados
+   -Melhores avaliados
+   -Média de preço pesquisado
+   -Média de idade
+   -Média da gasolina
+   -Distancia percorrida pelo usuário
     
 >## Marco de Entrega 01 em: (Data definida no cronograma)<br>
 
