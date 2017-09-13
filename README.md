@@ -14,11 +14,8 @@ O projeto DestinoES basea-se em um aplicativo de busca de pontos turísticos e h
 
 ### 3.MINI-MUNDO<br>
 
-O App se basearia em pessoas que tenha uma determinada quantia de dinheiro e esteja disposta à fazer uma viagem ou conhecer locais Capixabas com essa quantia. No sistema a pessoa indica uma certa quantia que deseja gastar e o aplicativo provém destinos em terras Capixabas que o mesmo pode chegar usando essa quantia determinada. A reserva da Pousada e afins não são disponibilizadas pelo aplicativo, o objetivo principal é apenas mostrar as opções de destinos dentro do orçamento. O sistema também calculará o valor do deslocamento por carro e por ônibus(caso o destino possua uma distância maior).<br>
-Entrevista com o usuário e identificação dos requisitos.<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
+O App se basearia em pessoas que tenha uma determinada quantia de dinheiro e esteja disposta à fazer uma viagem ou conhecer locais Capixabas com essa quantia. No sistema a pessoa indica uma certa quantia que deseja gastar e o aplicativo provém destinos em terras Capixabas que o mesmo pode chegar usando essa quantia determinada. A reserva da Pousada e afins não são disponibilizadas pelo aplicativo, o objetivo principal é apenas mostrar as opções de destinos dentro do orçamento. O sistema também calculará o valor do deslocamento por carro e por ônibus(caso o destino possua uma distância maior) assim como a distância do local de origem para o local de destino que será disponibilizado por um aplicativo de mapas como por exemplo o Google Maps.
+
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
