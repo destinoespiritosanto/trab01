@@ -7,7 +7,7 @@ Trabalho desenvolvido durante a disciplina de BD1
 Integrantes do grupo<br>
 Renato da Silva Bellumat:renato.bellumat@hotmail.com<br>
 Luciano Ananias Barboza Junior:luciano.ananias.40@gmail.com<br>
-Leonardo Kenji Murakami:leonardokenji_93@hotmail.com<br>
+
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 O projeto DestinoES basea-se em um aplicativo de busca de pontos turísticos e hotéis de locais do estado do Espírito Santo. Decidimos desenvolver este trabalho, pois se encaixa muito bem na disciplina de banco de dados tendo em vista que temos que cadastrar vários usuários, pontos turísticos e hotéis disponíveis, além de podermos incentivar o turismo capixaba, mostrando lugares incríveis  que nem todo mundo tem conhecimento e que caiba no orçamento.
