@@ -137,8 +137,8 @@ VALUES('1','Praia do Morro','Praia aberta à todos os públicos, sem preço e co
 ('6','Praia 
 de Piuma','Praia aberta à todos públicos, sem preço e com vários restaurantes.'),('7','Catedral Sagrado Coraçao','Aberta à todos os públicos das 8:00 às 18:00 e entrada gratuita),
 ('8','Zoo Park da Motanha','Aberto de 9:00 às 16:00 e custo da entrada de 13,50 reais.'),
-('Capela de Santa Luzia'),('Reserva 
-Biologica')
+('9','Capela de Santa Luzia','Aberto de 7:00 às 20 hrs e sem custo'),('10','Reserva 
+Biologica','Aberto de 8:00 às 18:00 com valor de 10,00 reais de entrada.')
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
