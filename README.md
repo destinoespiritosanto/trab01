@@ -70,13 +70,12 @@ O App se basearia em pessoas que tenha uma determinada quantia de dinheiro e est
     
     
 #### 5.3 DESCRIÇÃO DOS DADOS  
-    
-Usuário: Tabela que armazena informações relativas ao usuário como nome, código e etc;
-Pesquisa: Campo que relaciona o usuário com o que ele deseja;
-Hotel/Pousada: Tabela com informações sobre pousadas cadastradas no aplicativo.
-Cidade: Tabela com informações sobre cidades do Espírito Santo com algum hotel/pousada cadastrado.
-Gasolina: Tabela com informações de preço com finalidade de informar valores gastos com deslocamento.
-Ponto Turístico: Tabela com informações de pontos turísticos de uma cidade em específico.
+   Usuário: Tabela que armazena informações relativas ao usuário como nome, código e etc;
+   Pesquisa: Campo que relaciona o usuário com o que ele deseja;
+   Hotel/Pousada: Tabela com informações sobre pousadas cadastradas no aplicativo.
+   Cidade: Tabela com informações sobre cidades do Espírito Santo com algum hotel/pousada cadastrado.
+   Gasolina: Tabela com informações de preço com finalidade de informar valores gastos com deslocamento.
+   Ponto Turístico: Tabela com informações de pontos turísticos de uma cidade em específico.
 
 ### 6	MODELO LÓGICO<br>
         a) inclusão do modelo lógico do banco de dados
