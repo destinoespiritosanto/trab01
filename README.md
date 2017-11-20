@@ -79,12 +79,7 @@ O App se basearia em pessoas que tenha uma determinada quantia de dinheiro e est
     p) nm_pt: tipo varchar para armazenar nome do ponto turístico;
     
     
-#### 5.3 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+#### 5.3 DESCRIÇÃO DOS DADOS  
     
 Usuário: Tabela que armazena informações relativas ao usuário como nome, código e etc;
 Pesquisa: Campo que relaciona o usuário com o que ele deseja;
