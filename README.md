@@ -143,24 +143,15 @@ CREATE TABLE gasolina(
 INSERT INTO usuario(nm_usuario,dt_nascimento,email_usuario,senha_usuario,cd_cidade);
 
 VALUES('Leonardo','1995-12-31','leonardo.24@exemple.com','leo123','2'),
-(Renato B','1992
--04-24','renato.24@exemple.com','re123','2'),
-('Luciano Barboza','1996-02-
-20','luciano.24@exemple.com','lu123','1'),
-('Ana Carolina','1994-04-
-22','ana.24@exemple.com','ana123,'5'),
-('Matheus Barbosa','1994-04-
-29','matheus.24@exemple.com','mat123','2'),
-('Lucas Bellumat',1995-09-
-03','lucas.24@exemple.com','luc123','5'),
-('Rodrigo Bellumat','1994-01-
-12','rodrigo.24@exemple.com','rod123','1'),
-('Sarah Rizzo','1998-04-
-25','sarah.20@exemple.com','sa123',7'),
-('Jéssica Lirio','1992-05-
-02','jessica.24@exemple.com','je123','3'),
-('Lynda Silva','1993-11-
-01','lynda.24@exemple.com','ly123','2');
+(Renato B','1992-04-24','renato.24@exemple.com','re123','2'),
+('Luciano Barboza','1996-02-20','luciano.24@exemple.com','lu123','1'),
+('Ana Carolina','1994-04-22','ana.24@exemple.com','ana123,'5'),
+('Matheus Barbosa','1994-04-29','matheus.24@exemple.com','mat123','2'),
+('Lucas Bellumat',1995-09-03','lucas.24@exemple.com','luc123','5'),
+('Rodrigo Bellumat','1994-01-12','rodrigo.24@exemple.com','rod123','1'),
+('Sarah Rizzo','1998-04-25','sarah.20@exemple.com','sa123',7'),
+('Jéssica Lirio','1992-05-02','jessica.24@exemple.com','je123','3'),
+('Lynda Silva','1993-11-01','lynda.24@exemple.com','ly123','2');
 
 INSERT INTO cidade(nm_cidade);
 VALUES('Guarapari'),
@@ -177,20 +168,107 @@ VALUES('Hotel Maryland'),
 
 INSERT INTO pontos_turisticos(cd_cidade,nm_pt);
 VALUES('1','Praia do Morro','Praia aberta à todos os públicos, sem preço e com vários restaurantes.')
-('2','Pedra Da Cebola', 'Aberto de 5:00 às 22:00m sem preço. Um passeio ecológico.'),('3','Pedra Azul','Aberto das 8:00 às 17:00, entrada gratuita e passeio ecológico.'),
-('4','Guriri','Praia aberta à todos os públicos, sem preço e com vários restaurantes ao longo da orla.'),('5','Dunas','Aberto à todos públicos e gratuito.'),
-('6','Praia 
-de Piuma','Praia aberta à todos públicos, sem preço e com vários restaurantes.'),('7','Catedral Sagrado Coraçao','Aberta à todos os públicos das 8:00 às 18:00 e entrada gratuita),
+('2','Pedra Da Cebola', 'Aberto de 5:00 às 22:00m sem preço. Um passeio ecológico.'),
+('3','Pedra Azul','Aberto das 8:00 às 17:00, entrada gratuita e passeio ecológico.'),
+('4','Guriri','Praia aberta à todos os públicos, sem preço e com vários restaurantes ao longo da orla.'),
+('5','Dunas','Aberto à todos públicos e gratuito.'),
+('6','Praia de Piuma','Praia aberta à todos públicos, sem preço e com vários restaurantes.'),
+('7','Catedral Sagrado Coraçao','Aberta à todos os públicos das 8:00 às 18:00 e entrada gratuita),
 ('8','Zoo Park da Motanha','Aberto de 9:00 às 16:00 e custo da entrada de 13,50 reais.'),
-('Capela de Santa Luzia'),('Reserva 
-Biologica')
+('9','Capela de Santa Luzia','Aberto todos os dias sem preço de entrada'),
+('10','Reserva Biologica','Aberto de 8:00 às 18:00 com entrada de 5 reais.')
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script 
-        (Drop table + Create de tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+        
+        DROP TABLE usuario
+        DROP TABLE cidade
+        DROP TABLE hotel_pousada
+        DROP TABLE bairro
+        DROP TABLE rua
+        DROP TALBE pontos_turisticos
+        DROP TABLE gasolina
+        
+        CREATE TABLE usuario(
+   
+        cd_usuario serial not null,
+        nm_usuario varchar(100) not null,
+        dt_nascimento date,
+        email_usuario varchar(50),
+        senha_usuario varchar(18) not null,
+        cd_cidade serial not null,
+        PRIMARY KEY (cd_usuario),
+        FOREIGN KEY cd_cidade REFERENCES cidade(cd_cidade));
+        
+        CREATE TABLE cidade(
+        cd_cidade serial not null,
+        nm_cidade char(20) not null,
+        PRIMARY KEY (cd_cidade));
+        
+        CREATE TABLE hotel_pousada(
+        cd_hp serial not null,
+        nm_hp varchar(100),
+        cd_bairro serial not null,
+        cd_rua serial not null   
+        PRIMARY KEY(cd_hp);
+        FOREIGN KEY cd_bairro REFERENCES bairro(cd_bairro);
+        FOREIGN KEY cd_rua REFERENCES rua0(cd_rua));
+        
+        CREATE TABLE bairro(
+        cd_bairro serial not null,
+        nm_bairro varchar(50) not null,
+        cd_cidade int not null,
+        FOREIGN KEY cd_cidade REFERENCES cidade(cd_cidade));
+        
+        CREATE TABLE rua(
+        cd_rua serial not null,
+        nm_rua varchar(100) not null,
+        cd_bairro int not null,
+        FOREIGN KEY cd_bairro REFERENCES bairro(cd_bairro));
+        
+        CREATE TABLE pontos_turisticos(
+        cd_pt serial not null,
+        nm_pt varchar(200),
+        cd_cidade int not null,
+        PRIMARY KEY (cd_pt),
+        FOREIGN KEY cd_cidade REFERENCES cidade(cd_cidade));
+        
+        CREATE TABLE gasolina(
+        preco_gasolina money not null,
+        cd_cidade int not null,
+        FOREIGN KEY cd_cidade REFERENCES cidade(cd_cidade));
+        
+        INSERT INTO usuario 
+        (nm_usuario,dt_nascimento,email_usuario,senha_usuario,cd_cidade);
+        VALUES('Leonardo','1995-12-31','leonardo.24@exemple.com','leo123','2'),
+        (Renato B','1992-04-24','renato.24@exemple.com','re123','2'),
+        ('Luciano Barboza','1996-02-20','luciano.24@exemple.com','lu123','1'),
+        ('Ana Carolina','1994-04-22','ana.24@exemple.com','ana123,'5'),
+        ('Matheus Barbosa','1994-04-29','matheus.24@exemple.com','mat123','2'),
+        ('Lucas Bellumat',1995-09-03','lucas.24@exemple.com','luc123','5'),
+        ('Rodrigo Bellumat','1994-01-12','rodrigo.24@exemple.com','rod123','1'),
+        ('Sarah Rizzo','1998-04-25','sarah.20@exemple.com','sa123',7'),
+        ('Jéssica Lirio','1992-05-02','jessica.24@exemple.com','je123','3'),
+        ('Lynda Silva','1993-11-01','lynda.24@exemple.com','ly123','2');
+        
+        INSERT INTO cidade(nm_cidade);
+        VALUES('Guarapari'),('Vitoria'),('Domingos Martins'),('São Mateus'),
+        ('Itaúnas'),('Piúma'),('Colatina'),('Marechal Floriano'),('Itarana'),('Linhares');
+        
+        INSERT INTO hotel_pousada(cd_hp,nm_hp);
+        VALUES('Hotel Maryland'),('Ibis Hotel'),('Maratu'),('Hotel Budapeste'),('Paradise'),
+        ('Aruan'),('Hotel de Colatina'),('Cacatua'),('Conrado'),('Palace Hotel');
+        
+        INSERT INTO pontos_turisticos(cd_cidade,nm_pt);
+        VALUES('1','Praia do Morro','Praia aberta à todos os públicos, sem preço e com vários restaurantes.')
+        ('2','Pedra Da Cebola', 'Aberto de 5:00 às 22:00m sem preço. Um passeio ecológico.'),
+        ('3','Pedra Azul','Aberto das 8:00 às 17:00, entrada gratuita e passeio ecológico.'),
+        ('4','Guriri','Praia aberta à todos os públicos, sem preço e com vários restaurantes ao longo da orla.'),
+        ('5','Dunas','Aberto à todos públicos e gratuito.'),
+        ('6','Praia de Piuma','Praia aberta à todos públicos, sem preço e com vários restaurantes.'),
+        ('7','Catedral Sagrado Coraçao','Aberta à todos os públicos das 8:00 às 18:00 e entrada gratuita),
+        ('8','Zoo Park da Motanha','Aberto de 9:00 às 16:00 e custo da entrada de 13,50 reais.'),
+        ('9','Capela de Santa Luzia','Aberto todos os dias sem preço de entrada'),
+        ('10','Reserva Biologica','Aberto de 8:00 às 18:00 com entrada de 5 reais.')
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
