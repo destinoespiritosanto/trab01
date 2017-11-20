@@ -59,19 +59,33 @@ O App se basearia em pessoas que tenha uma determinada quantia de dinheiro e est
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
+  
     
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
-
+    a) cd_usuario: valor serial pois cada usuario terá um codigo inteiro crescente;
+    b) nm_usuario: campo varchar para ter acesso ao nome do usuário;
+    c) dt_nascimento: tipo date com finalidade de obter informações do usuário (idade);
+    d) email_usuario: tipo varchar com finalidade de obter uma forma de contatar o usuário;
+    e) senha_usuario: tipo varchar codigo pessoal para utilizar o aplicativo;
+    f) cd_cidade: tipo serial para armazenar o código da cidade de forma crescente;
+    g) nm_cidade: tipo varchar acesso do nome da cidade para pesquisa do usuário;
+    h) cd_hp: tipo serial para armazenar o código do hotel/pousada;
+    i) nm_hp: tipo varchar para ter acesso ao nome do hotel/pousada;
+    j) cd_bairro: tipo serial para servir de informação à um endereço;
+    k) nm_bairro: tipo varchar para acesso ao nome do bairro;
+    l) cd_rua: tipo serial para servir de informação à um endereço;
+    m) nm_rua: tipo varchar para servir de informação do nome da rua;
+    n) preco_gasolina: tipo money para calcular gastos com deslocamento;
+    o) cd_pt: tipo serial para armazenar código do ponto turístico;
+    p) nm_pt: tipo varchar para armazenar nome do ponto turístico;
+    
+    
 #### 5.3 DESCRIÇÃO DOS DADOS 
     [objeto]: [descrição do objeto]
     
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    
 
 
 ### 6	MODELO LÓGICO<br>
