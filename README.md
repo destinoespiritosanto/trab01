@@ -91,8 +91,53 @@ O App se basearia em pessoas que tenha uma determinada quantia de dinheiro e est
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físic
-        b) formato .SQL
+   CREATE TABLE usuario(
+   
+   cd_usuario serial not null, 
+   nm_usuario varchar(100) not null,
+   dt_nascimento date,
+   email_usuario varchar(50),
+   senha_usuario varchar(18) not null,
+   cd_cidade int not null
+   PRIMARY KEY (cd_usuario)
+   FOREIGN KEY cd_cidade REFERENCES cidade(cd_cidade));
+
+CREATE TABLE cidade(
+   cd_cidade serial not null,
+   nm_cidade char(20) not null
+   PRIMARY KEY (cd_cidade));
+
+
+
+CREATE TABLE hotel_pousada(
+   cd_hp serial not null,
+   nm_hp varchar(100),
+   PRIMARY KEY(cd_hp));
+
+CREATE TABLE bairro(
+  cd_bairro serial not null,
+  nm_bairro varchar(50) not null,
+  cd_cidade int not null,
+  FOREIGN KEY cd_cidade REFERENCES cidade(cd_cidade));
+
+CREATE TABLE rua(
+  cd_rua serial not null,
+  nm_rua varchar(100) not null,
+  cd_bairro int not null,
+  FOREIGN KEY cd_bairro REFERENCES bairro(cd_bairro));
+
+CREATE TABLE pontos_turisticos(
+   
+  cd_pt serial not null,
+  nm_pt varchar(200),
+  cd_cidade int not null,
+  PRIMARY KEY (cd_pt),
+  FOREIGN KEY cd_cidade REFERENCES cidade(cd_cidade));
+
+CREATE TABLE gasolina(
+  preco_gasolina money not null
+  cd_cidade int not null
+  FOREIGN KEY cd_cidade REFERENCES cidade(cd_cidade));
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
 INSERT INTO usuario(nm_usuario,dt_nascimento,email_usuario,senha_usuario,cd_cidade);
@@ -137,8 +182,8 @@ VALUES('1','Praia do Morro','Praia aberta à todos os públicos, sem preço e co
 ('6','Praia 
 de Piuma','Praia aberta à todos públicos, sem preço e com vários restaurantes.'),('7','Catedral Sagrado Coraçao','Aberta à todos os públicos das 8:00 às 18:00 e entrada gratuita),
 ('8','Zoo Park da Motanha','Aberto de 9:00 às 16:00 e custo da entrada de 13,50 reais.'),
-('9','Capela de Santa Luzia','Aberto de 7:00 às 20 hrs e sem custo'),('10','Reserva 
-Biologica','Aberto de 8:00 às 18:00 com valor de 10,00 reais de entrada.')
+('Capela de Santa Luzia'),('Reserva 
+Biologica')
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
