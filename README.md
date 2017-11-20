@@ -95,11 +95,51 @@ O App se basearia em pessoas que tenha uma determinada quantia de dinheiro e est
         b) formato .SQL
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script 
-        (create para tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+INSERT INTO usuario(nm_usuario,dt_nascimento,email_usuario,senha_usuario,cd_cidade);
+
+VALUES('Leonardo','1995-12-31','leonardo.24@exemple.com','leo123','2'),
+(Renato B','1992
+-04-24','renato.24@exemple.com','re123','2'),
+('Luciano Barboza','1996-02-
+20','luciano.24@exemple.com','lu123','1'),
+('Ana Carolina','1994-04-
+22','ana.24@exemple.com','ana123,'5'),
+('Matheus Barbosa','1994-04-
+29','matheus.24@exemple.com','mat123','2'),
+('Lucas Bellumat',1995-09-
+03','lucas.24@exemple.com','luc123','5'),
+('Rodrigo Bellumat','1994-01-
+12','rodrigo.24@exemple.com','rod123','1'),
+('Sarah Rizzo','1998-04-
+25','sarah.20@exemple.com','sa123',7'),
+('Jéssica Lirio','1992-05-
+02','jessica.24@exemple.com','je123','3'),
+('Lynda Silva','1993-11-
+01','lynda.24@exemple.com','ly123','2');
+
+INSERT INTO cidade(nm_cidade);
+VALUES('Guarapari'),
+('Vitoria'),('Domingos Martins'),('São Mateus'),
+('Itaúnas'),
+('Piúma'),('Colatina'),
+('Marechal Floriano'),('Itarana'),('Linhares');
+
+INSERT INTO hotel_pousada(cd_hp,nm_hp);
+VALUES('Hotel Maryland'),
+('Ibis Hotel'),('Maratu'),('Hotel Budapeste'),('Paradise'),
+('Aruan'),('Hotel de Colatina'),('Cacatua'),('Conrado'),
+('Palace Hotel');
+
+INSERT INTO pontos_turisticos(cd_cidade,nm_pt);
+VALUES('1','Praia do Morro','Praia aberta à todos os públicos, sem preço e com vários restaurantes.')
+('2','Pedra Da Cebola', 'Aberto de 5:00 às 22:00m sem preço. Um passeio ecológico.'),('3','Pedra Azul','Aberto das 8:00 às 17:00, entrada gratuita e passeio ecológico.'),
+('4','Guriri','Praia aberta à todos os públicos, sem preço e com vários restaurantes ao longo da orla.'),('5','Dunas','Aberto à todos públicos e gratuito.'),
+('6','Praia 
+de Piuma','Praia aberta à todos públicos, sem preço e com vários restaurantes.'),('7','Catedral Sagrado Coraçao','Aberta à todos os públicos das 8:00 às 18:00 e entrada gratuita),
+('8','Zoo Park da Motanha','Aberto de 9:00 às 16:00 e custo da entrada de 13,50 reais.'),
+('Capela de Santa Luzia'),('Reserva 
+Biologica')
+
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
         (Drop table + Create de tabelas e estruturas de dados + dados a serem inseridos)
